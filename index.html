@@ -6,7 +6,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta charset="UTF-8" />
 		<link rel="canonical" href="http://mediaforce.co.in">
-		<meta property="og:image" content="http://mediaforce.co.in/images/placeholder.jpg">
 
         <!-- //for-mobile-apps -->
         <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet"  />
@@ -67,7 +66,7 @@
                         <li style="display:inline-block;padding:20px;">
 						<a href="tel:+918652102340" style="color:white;"><span class="glyphicon glyphicon-phone" aria-hidden="true"></span>Phone: +91 8652102340</a></li>
                         <li style="display:inline-block;padding:20px;">
-						<a href="mailto:info@mediaforce.co.in" style="color:white;"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>&nbsp;Email: info@mediaforce.co.in</a></li>
+						<a href="mailto:mediaforce13@gmail.com" style="color:white;"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>&nbsp;Email: mediaforce13@gmail.com</a></li>
                     </ul>
 					<!--googleon: all-->
 					
@@ -424,28 +423,10 @@
 
 
         <footer class="contact-form" style="background:rgba(0,0,0,1);">
-			<div class="w3-modal" id="id01" >
-				<div class="w3-modal-content wow zoomIn" data-wow-duration="2s" data-wow-delay="0.1s" style="padding:20px;">
-					<a class="w3-button w3-black" onclick="document.getElementById('id01').style.display='none'" style="float:right;">Close X&nbsp;</a>
-					<h3 style="margin-bottom:25px;">Write to us</h3>
-						<form action="./fix.php" name="frm" id="frm" method="post">
-					<h4>Name</h4> 
-					<input class="w3-input w3-border"  style="margin-bottom:20px;" type="text" name="name"  required="" />
-					
-					<h4>Phone (optional)</h4> 
-					<input class="w3-input w3-border" style="margin-bottom:20px;" type="number" name="phone" placeholder="+91 XXXXXXXXXX" />
-					
-					<h4>Email (optional)</h4>
-					<input class="w3-input w3-border" style="margin-bottom:20px;" type="email" name="email" placeholder="max@example.com" />
-					
-					<h4>Message</h4>
-					<textarea class="w3-input w3-border" style="margin-bottom:20px;" placeholder="Send us Your Query....." name="msg" required=""></textarea>
-					<center><input type="submit" class="w3-button w3-black" name="submit" id="submit" value="Submit"  ></center>
-					</form>
-					<hr>
-					<h3 >Contact Us</h3>
-					<center><p style="display:block;margin-top:15px;">
-					+91 8652102340 | mediaforce28@gmail.com | info@mediaforce.co.in</p></center>
+			<div class="w3-modal" style="text-align:center;"  id="id01" >
+				<div class="w3-modal-content wow zoomIn" style="background:rgba(0,0,0,0);" data-wow-duration="2s" data-wow-delay="0.1s">
+					<a class="w3-button" style="background:rgba(255,255,255,1);"  onclick="document.getElementById('id01').style.display='none'"><h3>Close X&nbsp;</h3></a><br>
+					<iframe style="height:700px;width:100%;"  src="https://docs.google.com/forms/d/e/1FAIpQLScx94EpRLgAMoV-l82mSCPjPrx7RsAVcHMSIBo28_-gU3TH7Q/viewform?embedded=true"  frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
 				</div>
 			</div>
 <p class="text-center" style="font-size:16px;color:white;" >&copy; <?php echo date("Y"); ?> MediaForce. All rights reserved</p>			
@@ -472,12 +453,6 @@
 			}
 		}
 		
-		a=document.createElement('input');
-		a.setAttribute("type","hidden");
-		a.setAttribute("value","mediaforce.co.in");
-		a.setAttribute("name","valid_coder");
-		document.forms['frm'].appendChild(a);
-
         </script>
 		</div>
     </body>
