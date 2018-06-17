@@ -11,10 +11,11 @@
         <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet"  />
         <link href="./style.css" rel="stylesheet"  />
         <!-- js -->
-		<script  src="//code.jquery.com/jquery-2.1.4.js"></script>
+	<script  src="//code.jquery.com/jquery-2.1.4.js"></script>
+	<script src="//cdn.rawgit.com/viljamis/ResponsiveSlides.js/master/responsiveslides.min.js"></script>
         <!-- //js -->
         <script  src="//maxcdn.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
-		<meta name="description" content="Media Force develops businesses for clients via Digital and Social media. We build websites, conduct events, manage social media, dubb videos, SEO marketing and make AV films." >
+	<meta name="description" content="Media Force develops businesses for clients via Digital and Social media. We build websites, conduct events, manage social media, dubb videos, SEO marketing and make AV films." >
         <!-- fonts -->
         <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' >
         <link href='//fonts.googleapis.com/css?family=Acme' rel='stylesheet' ><!-- //fonts -->
@@ -112,26 +113,6 @@
             </div>
 		
         <section class="ban-bot text-center" style="padding-bottom: 100px;" >
-                <script src="https://cdn.rawgit.com/viljamis/ResponsiveSlides.js/master/responsiveslides.min.js"></script>
-				<script>
-                            // You can also use "$(window).load(function() {"
-                            $(function () {
-                                $("#slider3").responsiveSlides({
-                                    auto: true,
-                                    pager: true,
-                                    nav: false,
-                                    speed: 500,
-									 timeout: 7000,
-                                    namespace: "callbacks",
-                                    before: function () {
-                                        $('.events').append("<li>before event fired.</li>");
-                                    },
-                                    after: function () {
-                                        $('.events').append("<li>after event fired.</li>");
-                                    }
-                                });
-                            });
-                </script>
                 <div  id="top" class="callbacks_container">
                     <ul class="rslides" id="slider3">
                         <li>
@@ -157,10 +138,13 @@
                                 <a class="hvr-rectangle-out" onclick="runner();" 
 								href="javascript:;">Contact us Now!</a>
                             </div>		
-                        </li>
-						
+                        </li>			
                     </ul>
-                </div>
+		<script>
+		  $(function() {
+		    $(".rslides").responsiveSlides();
+		  });
+		</script>
                 <div class="clearfix"></div>
             
         </section>
